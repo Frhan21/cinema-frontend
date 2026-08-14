@@ -1,0 +1,202 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#930007","on-secondary":"#00344b","primary-fixed-dim":"#ffb4aa","on-primary-container":"#fff7f6","primary-fixed":"#ffdad5","surface-tint":"#ffb4aa","secondary-fixed":"#c6e7ff","on-secondary-container":"#003952","on-primary-fixed":"#410001","surface-container-low":"#1c1b1b","surface-container-high":"#2a2a2a","tertiary-container":"#717373","error":"#ffb4ab","on-primary":"#690003","on-tertiary":"#2f3131","on-tertiary-container":"#f9f9f9","on-tertiary-fixed":"#1a1c1c","on-tertiary-fixed-variant":"#454747","error-container":"#93000a","inverse-on-surface":"#313030","surface-bright":"#3a3939","outline-variant":"#5e3f3b","surface":"#131313","surface-dim":"#131313","surface-container-lowest":"#0e0e0e","outline":"#af8782","on-error-container":"#ffdad6","surface-container":"#201f1f","secondary-fixed-dim":"#83cfff","surface-variant":"#353534","inverse-surface":"#e5e2e1","secondary":"#83cfff","background":"#131313","on-secondary-fixed-variant":"#004c6b","on-background":"#e5e2e1","surface-container-highest":"#353534","on-surface-variant":"#e9bcb6","tertiary-fixed-dim":"#c6c6c7","inverse-primary":"#c0000c","primary-container":"#e50914","on-error":"#690005","on-surface":"#e5e2e1","primary":"#ffb4aa","tertiary":"#c6c6c7","tertiary-fixed":"#e2e2e2","secondary-container":"#03a8e8","on-secondary-fixed":"#001e2d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"unit":"8px","gutter":"24px","margin-mobile":"16px","stack-sm":"12px","stack-lg":"48px","margin-desktop":"64px","container-max":"1440px","stack-md":"24px"},"fontFamily":{"label-caps":["Inter"],"headline-lg-mobile":["Montserrat"],"body-md":["Inter"],"headline-md":["Montserrat"],"display-lg":["Montserrat"],"button":["Montserrat"],"headline-lg":["Montserrat"],"body-lg":["Inter"]},"fontSize":{"label-caps":["12px",{"lineHeight":"1","letterSpacing":"0.1em","fontWeight":"700"}],"headline-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"1.5","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"1.3","fontWeight":"600"}],"display-lg":["64px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"800"}],"button":["14px",{"lineHeight":"1","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-white/10"><div class="h-[72px] w-full px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-stack-md"><img alt="CineReserve Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0zMi5O-3zMgusrDeA1hmGEP5F9sW2fWFnIVCfut9XRjNdCeRN6aAkuvii1QfBxhB5KySbbwxQysmx756VFnKlsy4BKzj63QVBMgiIr0ikXI9atFaRv1y0s2KBNIDObwLyrpdanINahlZEUdSA6aWDThggt1m4sB3LnKROj75YRxfWQEo_v8KX6eBsLDhDbWD_NT7bmSIm3MgADckE5QE58zPW8kghkBuEZ64ymsqgTtK6-xG8sNmp3g"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">CineReserve</span></div><nav class="hidden lg:flex items-center gap-stack-md mx-auto" data-active-classes="text-primary font-semibold"><a class="font-button text-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-button text-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="font-button text-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="theaters" href="#">Theaters</a><a class="font-button text-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="promotions" href="#">Promotions</a></nav><div class="flex items-center gap-stack-md flex-1 max-w-md mx-gutter"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span><input class="w-full bg-surface-container-highest/50 border border-white/10 rounded-lg py-2 pl-10 pr-4 text-on-surface focus:outline-none focus:border-secondary transition-all font-body-md text-body-md shadow-inner" placeholder="Search movies..." type="text"/></div></div><div class="flex items-center gap-stack-md"><button class="relative text-on-surface-variant hover:text-on-surface p-2"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-primary-container rounded-full"></span></button><img alt="Profile" class="w-9 h-9 rounded-full object-cover border border-white/20 hover:scale-105 transition-transform cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJMrdKFapND5_NiCdX3LxdXqFkwntEPd0D8K8oIxJQAcCmKJldZ3GRH8HjmAtHZgW3kvL4TM1We8wFPy7oUoi2HC7vk5XsS1CqKUSM36nXb_JSMdRNLQYKLnfGYx_rGZjp4zhFUl_9nTS3qr6cVlPuIKHnNdtRC27Q0LhQ6p9jcMXOnMrAe4T4e6a7GtFmXT41Xk9Et5oYztiUPCqFc16RNO6PhdDRfpEAWHvuAJTiq1o1zR_aSeOYPw"/></div></div></header><main class="w-full pt-[72px] bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden bg-background">
+<!-- Cinematic Light Rays (Background Effect) -->
+<div class="absolute inset-x-0 top-0 h-[400px] pointer-events-none opacity-40 mix-blend-screen" style="background: radial-gradient(ellipse at top, rgba(131, 207, 255, 0.15) 0%, transparent 70%);"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+<!-- Movie Meta & Header -->
+<div class="flex flex-col md:flex-row justify-between items-start gap-stack-lg mb-stack-lg relative z-10">
+<div>
+<h1 class="font-display-lg text-display-lg text-on-background mb-unit">Dune: Part Two</h1>
+<div class="flex items-center gap-stack-md">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-caps text-label-caps tracking-widest">IMAX</span>
+<span class="text-on-surface-variant font-body-lg text-body-lg">Today, 8:30 PM • Screen 1</span>
+</div>
+</div>
+</div>
+<!-- Main Selection Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10">
+<!-- Left: Seat Map -->
+<div class="lg:col-span-8 bg-surface-container rounded-xl p-stack-md shadow-2xl relative overflow-hidden">
+<!-- Screen Indicator -->
+<div class="mb-stack-lg text-center relative w-full flex flex-col items-center">
+<svg class="w-full max-w-2xl h-12 stroke-secondary opacity-60 drop-shadow-[0_0_15px_rgba(131,207,255,0.5)]" fill="none" viewbox="0 0 400 40" xmlns="http://www.w3.org/2000/svg">
+<path d="M 20 30 Q 200 -10 380 30" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+<span class="font-label-caps text-label-caps text-secondary tracking-[0.2em] uppercase mt-2">Screen</span>
+</div>
+<!-- Seat Grid Container -->
+<div class="flex flex-col items-center gap-unit overflow-x-auto pb-4 custom-scrollbar">
+<!-- Rows A-C: Premium -->
+<div class="flex items-center gap-4 mb-2">
+<span class="w-6 text-center font-label-caps text-label-caps text-on-surface-variant">A</span>
+<div class="flex gap-2" id="row-a">
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-primary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="25" data-seat="A1">1</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface-variant outline outline-1 outline-transparent opacity-40 cursor-not-allowed" data-seat="A2" disabled="">2</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-primary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="25" data-seat="A3">3</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-primary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="25" data-seat="A4">4</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface-variant outline outline-1 outline-transparent opacity-40 cursor-not-allowed" data-seat="A5" disabled="">5</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface-variant outline outline-1 outline-transparent opacity-40 cursor-not-allowed" data-seat="A6" disabled="">6</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-primary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="25" data-seat="A7">7</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-primary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="25" data-seat="A8">8</button>
+</div>
+<span class="w-6 text-center font-label-caps text-label-caps text-on-surface-variant">A</span>
+</div>
+<!-- Economy Rows D-H -->
+<div class="flex items-center gap-4 mb-2">
+<span class="w-6 text-center font-label-caps text-label-caps text-on-surface-variant">D</span>
+<div class="flex gap-2">
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-secondary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="15" data-seat="D1">1</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-secondary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="15" data-seat="D2">2</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-secondary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="15" data-seat="D3">3</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface-variant outline outline-1 outline-transparent opacity-40 cursor-not-allowed" data-seat="D4" disabled="">4</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface-variant outline outline-1 outline-transparent opacity-40 cursor-not-allowed" data-seat="D5" disabled="">5</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-secondary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="15" data-seat="D6">6</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-secondary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="15" data-seat="D7">7</button>
+<button class="seat w-8 h-8 rounded-t-lg rounded-b-sm bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-secondary hover:bg-surface-bright flex items-center justify-center text-xs text-transparent hover:text-on-surface focus:outline-none" data-price="15" data-seat="D8">8</button>
+</div>
+<span class="w-6 text-center font-label-caps text-label-caps text-on-surface-variant">D</span>
+</div>
+<!-- Couple Seats Row K -->
+<div class="mt-stack-sm w-full border-t border-outline-variant/30 pt-stack-sm flex flex-col items-center">
+<span class="font-label-caps text-label-caps text-primary/80 tracking-widest mb-4">Couple Seats</span>
+<div class="flex items-center gap-4">
+<span class="w-6 text-center font-label-caps text-label-caps text-on-surface-variant">K</span>
+<div class="flex gap-6">
+<button class="seat-couple w-20 h-10 rounded-t-xl rounded-b-md bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-primary-fixed hover:bg-surface-bright flex items-center justify-center gap-2 focus:outline-none" data-price="50" data-seat="K1-K2">
+<span class="w-3 h-3 rounded-full bg-outline-variant/50"></span>
+<span class="w-3 h-3 rounded-full bg-outline-variant/50"></span>
+</button>
+<button class="seat-couple w-20 h-10 rounded-t-xl rounded-b-md bg-surface-variant outline outline-1 outline-transparent opacity-40 cursor-not-allowed flex items-center justify-center gap-2" data-seat="K3-K4" disabled="">
+<span class="w-3 h-3 rounded-full bg-surface/50"></span>
+<span class="w-3 h-3 rounded-full bg-surface/50"></span>
+</button>
+<button class="seat-couple w-20 h-10 rounded-t-xl rounded-b-md bg-surface outline outline-1 outline-outline-variant transition-all hover:outline-primary-fixed hover:bg-surface-bright flex items-center justify-center gap-2 focus:outline-none" data-price="50" data-seat="K5-K6">
+<span class="w-3 h-3 rounded-full bg-outline-variant/50"></span>
+<span class="w-3 h-3 rounded-full bg-outline-variant/50"></span>
+</button>
+</div>
+<span class="w-6 text-center font-label-caps text-label-caps text-on-surface-variant">K</span>
+</div>
+</div>
+</div>
+<!-- Legend -->
+<div class="mt-stack-lg flex flex-wrap justify-center gap-stack-md pt-stack-md border-t border-outline-variant/20">
+<div class="flex items-center gap-2">
+<div class="w-4 h-4 rounded-t-sm bg-surface outline outline-1 outline-outline-variant"></div>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Available</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-4 h-4 rounded-t-sm bg-secondary outline outline-1 outline-secondary shadow-[0_0_8px_rgba(131,207,255,0.8)]"></div>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Selected</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-4 h-4 rounded-t-sm bg-surface-variant opacity-40"></div>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Occupied</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-4 h-4 rounded-t-sm bg-surface outline outline-1 outline-primary"></div>
+<span class="font-body-md text-body-md text-primary text-sm">Premium</span>
+</div>
+</div>
+</div>
+<!-- Right: Order Summary Panel -->
+<div class="lg:col-span-4 flex flex-col">
+<div class="sticky top-[100px] bg-surface-container-high rounded-xl p-stack-md shadow-xl flex flex-col h-full lg:h-auto min-h-[400px]">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-md">Booking Summary</h2>
+<div class="flex-1 flex flex-col gap-unit" id="selected-seats-list">
+<div class="text-on-surface-variant font-body-md text-body-md italic text-center mt-stack-md" id="empty-state">
+                No seats selected yet.<br/>Click on the map to choose.
+              </div>
+<!-- Dynamically populated selected seats go here -->
+</div>
+<div class="mt-stack-md pt-stack-md border-t border-outline-variant/20">
+<div class="flex justify-between items-end mb-stack-md">
+<span class="font-body-lg text-body-lg text-on-surface-variant">Total</span>
+<span class="font-display-lg text-[40px] leading-none font-bold text-on-surface" id="total-price">$0.00</span>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-button text-button py-4 rounded-lg hover:scale-[1.02] transition-transform disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 shadow-[0_0_20px_rgba(229,9,20,0.3)] disabled:shadow-none" disabled="" id="checkout-btn">
+                Proceed to Payment
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const seats = document.querySelectorAll('.seat:not([disabled]), .seat-couple:not([disabled])');
+    const selectedSeatsList = document.getElementById('selected-seats-list');
+    const emptyState = document.getElementById('empty-state');
+    const totalPriceEl = document.getElementById('total-price');
+    const checkoutBtn = document.getElementById('checkout-btn');
+    
+    let selectedSeats = new Map();
+
+    const updateSummary = () => {
+      let total = 0;
+      selectedSeatsList.innerHTML = '';
+      
+      if (selectedSeats.size === 0) {
+        selectedSeatsList.appendChild(emptyState);
+        emptyState.style.display = 'block';
+        checkoutBtn.disabled = true;
+      } else {
+        emptyState.style.display = 'none';
+        checkoutBtn.disabled = false;
+        
+        selectedSeats.forEach((price, seatId) => {
+          total += price;
+          const row = document.createElement('div');
+          row.className = 'flex justify-between items-center bg-surface p-3 rounded-md border border-outline-variant/30';
+          
+          let seatType = seatId.includes('-') ? 'Couple Seat' : (seatId.startsWith('A') ? 'Premium Seat' : 'Standard Seat');
+          
+          row.innerHTML = `
+            <div>
+              <div class="font-button text-button text-on-surface">${seatId}</div>
+              <div class="text-xs text-on-surface-variant mt-1">${seatType}</div>
+            </div>
+            <div class="font-body-md text-body-md text-primary">$${price.toFixed(2)}</div>
+          `;
+          selectedSeatsList.appendChild(row);
+        });
+      }
+      
+      totalPriceEl.textContent = `$${total.toFixed(2)}`;
+    };
+
+    seats.forEach(seat => {
+      seat.addEventListener('click', () => {
+        const seatId = seat.dataset.seat;
+        const price = parseFloat(seat.dataset.price);
+        
+        const isCouple = seat.classList.contains('seat-couple');
+        const selectedClassBase = isCouple ? 'bg-secondary' : 'bg-secondary';
+        const outlineClass = isCouple ? 'outline-secondary' : 'outline-secondary';
+        
+        if (selectedSeats.has(seatId)) {
+          // Deselect
+          selectedSeats.delete(seatId);
+          seat.classList.remove(selectedClassBase, outlineClass, 'text-on-secondary', 'shadow-[0_0_12px_rgba(131,207,255,0.6)]');
+          seat.classList.add('bg-surface', 'outline-outline-variant');
+          if(!isCouple) seat.classList.add('text-transparent');
+        } else {
+          // Select
+          selectedSeats.set(seatId, price);
+          seat.classList.remove('bg-surface', 'outline-outline-variant', 'text-transparent', 'hover:bg-surface-bright');
+          seat.classList.add(selectedClassBase, outlineClass, 'text-on-secondary', 'shadow-[0_0_12px_rgba(131,207,255,0.6)]');
+        }
+        
+        // Add a small pop animation
+        seat.style.transform = 'scale(0.9)';
+        setTimeout(() => seat.style.transform = 'scale(1)', 100);
+        
+        updateSummary();
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-white/5 pt-stack-lg pb-stack-md"><div class="max-w-container-max mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg mb-stack-lg"><div><div class="flex items-center gap-unit mb-stack-md"><img alt="CineReserve Logo" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0zMi5O-3zMgusrDeA1hmGEP5F9sW2fWFnIVCfut9XRjNdCeRN6aAkuvii1QfBxhB5KySbbwxQysmx756VFnKlsy4BKzj63QVBMgiIr0ikXI9atFaRv1y0s2KBNIDObwLyrpdanINahlZEUdSA6aWDThggt1m4sB3LnKROj75YRxfWQEo_v8KX6eBsLDhDbWD_NT7bmSIm3MgADckE5QE58zPW8kghkBuEZ64ymsqgTtK6-xG8sNmp3g"/><span class="font-headline-md text-headline-md text-on-surface">CineReserve</span></div><p class="text-on-surface-variant font-body-md text-body-md">The premium cinematic experience at your fingertips. Reserve your front-row seat to the magic.</p></div><div class="flex flex-col gap-unit"><h4 class="font-label-caps text-label-caps text-primary mb-2">Legal</h4><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">Cookie Policy</a></div><div class="flex flex-col gap-unit"><h4 class="font-label-caps text-label-caps text-primary mb-2">Connect</h4><div class="flex gap-stack-sm"><a class="p-2 bg-surface-container rounded-lg text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#"><span class="material-symbols-outlined">share</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#"><span class="material-symbols-outlined">movie</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#"><span class="material-symbols-outlined">public</span></a></div></div><div class="flex flex-col gap-stack-md"><h4 class="font-label-caps text-label-caps text-primary">Newsletter</h4><div class="flex gap-2"><input class="bg-surface-container border border-white/10 rounded-lg px-4 py-2 flex-1 text-on-surface focus:outline-none focus:border-primary font-body-md" placeholder="Enter your email" type="email"/><button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-button text-button hover:scale-105 transition-transform">Join</button></div></div></div><div class="border-t border-white/5 pt-stack-md flex justify-between items-center text-on-surface-variant font-label-caps text-label-caps"><span>© 2024 CineReserve Global. All rights reserved.</span><span>IMAX & 4DX Ready</span></div></div></footer></body></html>

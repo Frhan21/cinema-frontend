@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; font-synthesis: none; }
+html { scroll-behavior: smooth; background: #0d0e0f; }
+body { margin: 0; min-width: 320px; background: #0d0e0f; }
+button, input, select { font: inherit; }
+::selection { background: #ff5f62; color: #160304; }
+
+@layer components {
+  .eyebrow { @apply text-[10px] font-bold uppercase tracking-[.16em] text-white/45; }
+  .footer-copy { @apply mt-3 text-sm leading-7 text-white/50; }
+  .section-title { @apply font-display text-xl font-bold tracking-tight; }
+  .screen-arc { @apply h-10 w-full rounded-[50%] border-t-2 border-secondary shadow-[0_-8px_24px_rgba(101,201,255,.2)]; transform: perspective(200px) rotateX(-18deg); }
+  .seat { @apply grid h-8 w-8 shrink-0 place-items-center rounded-[5px] border border-white/20 bg-[#272a2d] text-[9px] text-white/45 transition hover:-translate-y-0.5 hover:border-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary disabled:cursor-not-allowed; }
+  .seat-selected { @apply border-secondary bg-secondary text-[#06141b] shadow-[0_0_16px_rgba(101,201,255,.5)]; }
+  .seat-occupied { @apply border-transparent bg-white/5 text-white/15 opacity-40; }
+  .seat-premium { @apply border-primary/50 bg-primary/10 text-primary; }
+}
+
+@media (max-width: 520px) {
+  .seat { width: 1.5rem; height: 1.5rem; font-size: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

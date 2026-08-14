@@ -1,0 +1,232 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#930007","on-secondary":"#00344b","primary-fixed-dim":"#ffb4aa","on-primary-container":"#fff7f6","primary-fixed":"#ffdad5","surface-tint":"#ffb4aa","secondary-fixed":"#c6e7ff","on-secondary-container":"#003952","on-primary-fixed":"#410001","surface-container-low":"#1c1b1b","surface-container-high":"#2a2a2a","tertiary-container":"#717373","error":"#ffb4ab","on-primary":"#690003","on-tertiary":"#2f3131","on-tertiary-container":"#f9f9f9","on-tertiary-fixed":"#1a1c1c","on-tertiary-fixed-variant":"#454747","error-container":"#93000a","inverse-on-surface":"#313030","surface-bright":"#3a3939","outline-variant":"#5e3f3b","surface":"#131313","surface-dim":"#131313","surface-container-lowest":"#0e0e0e","outline":"#af8782","on-error-container":"#ffdad6","surface-container":"#201f1f","secondary-fixed-dim":"#83cfff","surface-variant":"#353534","inverse-surface":"#e5e2e1","secondary":"#83cfff","background":"#131313","on-secondary-fixed-variant":"#004c6b","on-background":"#e5e2e1","surface-container-highest":"#353534","on-surface-variant":"#e9bcb6","tertiary-fixed-dim":"#c6c6c7","inverse-primary":"#c0000c","primary-container":"#e50914","on-error":"#690005","on-surface":"#e5e2e1","primary":"#ffb4aa","tertiary":"#c6c6c7","tertiary-fixed":"#e2e2e2","secondary-container":"#03a8e8","on-secondary-fixed":"#001e2d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"unit":"8px","gutter":"24px","margin-mobile":"16px","stack-sm":"12px","stack-lg":"48px","margin-desktop":"64px","container-max":"1440px","stack-md":"24px"},"fontFamily":{"label-caps":["Inter"],"headline-lg-mobile":["Montserrat"],"body-md":["Inter"],"headline-md":["Montserrat"],"display-lg":["Montserrat"],"button":["Montserrat"],"headline-lg":["Montserrat"],"body-lg":["Inter"]},"fontSize":{"label-caps":["12px",{"lineHeight":"1","letterSpacing":"0.1em","fontWeight":"700"}],"headline-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"1.5","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"1.3","fontWeight":"600"}],"display-lg":["64px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"800"}],"button":["14px",{"lineHeight":"1","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-white/10"><div class="h-[72px] w-full px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-stack-md"><img alt="CineReserve Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0zMi5O-3zMgusrDeA1hmGEP5F9sW2fWFnIVCfut9XRjNdCeRN6aAkuvii1QfBxhB5KySbbwxQysmx756VFnKlsy4BKzj63QVBMgiIr0ikXI9atFaRv1y0s2KBNIDObwLyrpdanINahlZEUdSA6aWDThggt1m4sB3LnKROj75YRxfWQEo_v8KX6eBsLDhDbWD_NT7bmSIm3MgADckE5QE58zPW8kghkBuEZ64ymsqgTtK6-xG8sNmp3g"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">CineReserve</span></div><nav class="hidden lg:flex items-center gap-stack-md mx-auto" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="home" href="#">Home</a><a class="font-button text-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="font-button text-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="theaters" href="#">Theaters</a><a class="font-button text-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="promotions" href="#">Promotions</a></nav><div class="flex items-center gap-stack-md flex-1 max-w-md mx-gutter"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span><input class="w-full bg-surface-container-highest/50 border border-white/10 rounded-lg py-2 pl-10 pr-4 text-on-surface focus:outline-none focus:border-secondary transition-all font-body-md text-body-md shadow-inner" placeholder="Search movies..." type="text"/></div></div><div class="flex items-center gap-stack-md"><button class="relative text-on-surface-variant hover:text-on-surface p-2"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-primary-container rounded-full"></span></button><img alt="Profile" class="w-9 h-9 rounded-full object-cover border border-white/20 hover:scale-105 transition-transform cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJMrdKFapND5_NiCdX3LxdXqFkwntEPd0D8K8oIxJQAcCmKJldZ3GRH8HjmAtHZgW3kvL4TM1We8wFPy7oUoi2HC7vk5XsS1CqKUSM36nXb_JSMdRNLQYKLnfGYx_rGZjp4zhFUl_9nTS3qr6cVlPuIKHnNdtRC27Q0LhQ6p9jcMXOnMrAe4T4e6a7GtFmXT41Xk9Et5oYztiUPCqFc16RNO6PhdDRfpEAWHvuAJTiq1o1zR_aSeOYPw"/></div></div></header><main class="w-full pt-[72px] bg-background min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Ambient background glow for hero section -->
+<div class="absolute top-0 left-0 w-full h-[819px] bg-gradient-to-b from-primary/10 via-surface to-background pointer-events-none z-0"></div>
+<!-- HERO CAROUSEL -->
+<section class="relative w-full h-[768px] min-h-[600px] flex items-end pb-stack-lg z-10">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-700" data-alt="Epic, cinematic shot of a sci-fi space battle, glowing neon blue engines against deep space black, intense action, high fidelity, dark dramatic lighting." id="hero-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAh9KmxL50pVPlylqbU2XA85491Mwq7-TAgYtWJwf0rMFhroT3hc5AKct963LglsroEl1JX7wIvsRUOnbqR9wH8ZjVpnfCeAVT5hKMsbGb2SoLFKFMxXU8sqRTsCwsiDGqszLz98tZOlczJkiB7K2tmGmMueNuvLABnmCT9xtT1r0-mNchot9JU5sxlZ8iPehzYQLA9vBb8w-Ged-QgbDTa9GPmVDmqk-6BQgcrpZH7E877CpAhRfx4Cw')">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative w-full max-w-container-max mx-auto px-margin-desktop flex flex-col gap-stack-md z-20" id="hero-content">
+<div class="flex items-center gap-unit">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-caps text-label-caps backdrop-blur-md">IMAX 3D</span>
+<span class="text-on-surface-variant font-label-caps text-label-caps flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">star</span> 4.9</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface max-w-3xl leading-tight">Nebula Prime: The Last Horizon</h1>
+<div class="flex items-center gap-stack-md text-on-surface-variant font-body-md text-body-md">
+<span>Sci-Fi, Action</span>
+<span class="w-1 h-1 rounded-full bg-on-surface-variant/50"></span>
+<span>2h 45m</span>
+<span class="w-1 h-1 rounded-full bg-on-surface-variant/50"></span>
+<span>PG-13</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl line-clamp-2">Humanity's last hope rests on a rogue squadron venturing beyond the known galaxy. Experience the visual spectacle of the year.</p>
+<div class="flex items-center gap-stack-md mt-stack-sm">
+<button class="bg-primary hover:bg-primary-container text-on-primary font-button text-button px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(255,180,170,0.3)] flex items-center gap-2">
+<span class="material-symbols-outlined">local_activity</span>
+          Book Tickets
+        </button>
+<button class="bg-surface-container/50 hover:bg-surface-container backdrop-blur-md text-on-surface font-button text-button px-8 py-4 rounded-xl transition-all duration-300 flex items-center gap-2 border border-white/5 hover:border-white/20">
+<span class="material-symbols-outlined">play_arrow</span>
+          Watch Trailer
+        </button>
+</div>
+</div>
+<!-- Carousel Controls -->
+<div class="absolute bottom-stack-lg right-margin-desktop flex gap-unit z-20">
+<button class="w-3 h-3 rounded-full bg-primary transition-all duration-300 shadow-[0_0_10px_rgba(255,180,170,0.5)]"></button>
+<button class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-surface-variant transition-colors"></button>
+<button class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-surface-variant transition-colors"></button>
+</div>
+</section>
+<!-- SEARCH & FILTER BAR (Glassmorphic) -->
+<section class="w-full max-w-container-max mx-auto px-margin-desktop relative z-30 -mt-stack-lg">
+<div class="bg-surface-container-low/80 backdrop-blur-xl rounded-2xl p-stack-sm flex flex-col md:flex-row items-center justify-between gap-stack-sm shadow-2xl border border-white/5">
+<div class="flex-1 w-full flex items-center gap-stack-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface/50 border border-transparent focus:border-primary/30 rounded-xl py-3 pl-12 pr-4 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none transition-all font-body-md text-body-md" placeholder="Search by movie, theater, or cast..." type="text"/>
+</div>
+</div>
+<div class="w-full md:w-auto flex items-center gap-unit overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+<select class="bg-surface/50 border border-transparent focus:border-primary/30 rounded-xl py-3 px-4 text-on-surface font-button text-button focus:outline-none appearance-none cursor-pointer pr-10 relative">
+<option>All Genres</option>
+<option>Action</option>
+<option>Sci-Fi</option>
+<option>Drama</option>
+</select>
+<select class="bg-surface/50 border border-transparent focus:border-primary/30 rounded-xl py-3 px-4 text-on-surface font-button text-button focus:outline-none appearance-none cursor-pointer pr-10">
+<option>All Formats</option>
+<option>IMAX</option>
+<option>4DX</option>
+<option>Standard</option>
+</select>
+<button class="bg-surface-container hover:bg-surface-variant text-on-surface p-3 rounded-xl transition-colors">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+</div>
+</section>
+<!-- NOW PLAYING SECTION -->
+<section class="w-full max-w-container-max mx-auto px-margin-desktop py-stack-lg mt-stack-md z-20">
+<div class="flex items-end justify-between mb-stack-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Now Playing</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Book your tickets for the latest releases.</p>
+</div>
+<a class="font-button text-button text-primary hover:text-primary-container flex items-center gap-1 transition-colors group" href="#">
+        View All <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- BENTO GRID FOR MOVIE CARDS -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 (Large Featured) -->
+<div class="group relative md:col-span-2 lg:col-span-2 h-[450px] rounded-2xl overflow-hidden cursor-pointer shadow-xl isolate">
+<img alt="Cyber Neon" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 z-0" data-alt="High contrast poster of a gritty cyberpunk city street at night, neon reflections in puddles, lone figure with a glowing katana, cinematic framing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjWb2nDW-xsh-Ry1oQKkKQyb9Qxg_yi_A_awob4JUpKx0Kk-TEByAoe8xjqzfYSPNwZc5kkBH0U3j5Zt64kNM1K-H4TlzjHSb2JI3ecc9vOB39Y31Jms3wpBO0Qc3Rnmn6yEBzrUqUCD-xbKtvWMKKcYxD6eji52q3BYAOIygKd3NifG1SR3C-7KZCGxRJfkjS0bUPGZIDEG6DwybwHjNL8Yls632YMWXLjuxeuLEQkKp_LDvDSKMzYw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/95 via-background/40 to-transparent z-10"></div>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex items-center justify-center">
+<button class="bg-primary text-on-primary font-button text-button px-6 py-3 rounded-xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-2">
+<span class="material-symbols-outlined">local_activity</span> Get Tickets
+          </button>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-stack-sm z-30 flex flex-col gap-2">
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-primary/90 text-on-primary px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider backdrop-blur-md">4DX</span>
+<span class="bg-surface/80 text-on-surface px-2 py-0.5 rounded text-[10px] font-label-caps uppercase backdrop-blur-md">Action</span>
+<div class="ml-auto flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-button text-button text-on-surface">4.8</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-tight">Neon Samurai: Uprising</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">In a city of chrome, honor is the only currency left.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative h-[450px] rounded-2xl overflow-hidden cursor-pointer shadow-lg isolate bg-surface-container-low">
+<img alt="Whispering Woods" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 z-0" data-alt="Ethereal fantasy forest, glowing flora, soft misty lighting, silhouette of a mystical creature in the background, deep greens and purples." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ7-3PeufXoM6Lmr52g60yA-faCTJvooJW58JMPsgrek8GD6tmYuwuRtL4lowVCMBdtRO7kouXn-D7Pc9v2QVhnr49gp3KwJCUBwty5h5m__fHs2qHrXD9M_I3fLq_TNfKz3DHTIXrEv9eX_u_TaNgQk7tR6SSv3AGOeiOSbDFM-iXq3GYdlBsfooFS1NX-0cPCoDHkSPXKJ2cwCwNozFZBSizuuUTCACfLRHHdqan80BGqb7eSRmuTQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-surface/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex items-center justify-center">
+<button class="border border-white/20 bg-surface/50 text-on-surface font-button text-button px-5 py-2.5 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-primary hover:text-on-primary hover:border-transparent">
+            Quick View
+          </button>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-stack-sm z-30">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-surface/80 text-on-surface px-2 py-0.5 rounded text-[10px] font-label-caps uppercase backdrop-blur-md">Fantasy</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.5</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg leading-tight mb-1">Whispers of the Grove</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">2h 10m • PG</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative h-[450px] rounded-2xl overflow-hidden cursor-pointer shadow-lg isolate bg-surface-container-low">
+<img alt="Shattered Mind" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 z-0" data-alt="Intense psychological thriller poster, abstract fractured face made of glass shards reflecting a dark stormy sky, moody cool tones, minimalistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPDGHIqpPRe75yf_qHKd9T8vDzul-HCn_etMmRZwKj-KgwkilVIO1d2gh3q_XiRH8Um11BezVTgm-7O8C672WcMAElz2bd1c52kcdBY8EU7LYJGPJCfP0XXLRK0cE7CnGnp0ZuaOTgrI3jYpYRsamWHe2ktTK41Y1vERuxAcmSyDMWdWkfA9sgmboPPnzISUdnF6nx5P7F6OG4Pl3-Ki4_Snc68L_BHnQa63lmW7Ktz12Jvo4HVZ3c-A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-surface/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex items-center justify-center">
+<button class="border border-white/20 bg-surface/50 text-on-surface font-button text-button px-5 py-2.5 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-primary hover:text-on-primary hover:border-transparent">
+            Quick View
+          </button>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-stack-sm z-30">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-surface/80 text-on-surface px-2 py-0.5 rounded text-[10px] font-label-caps uppercase backdrop-blur-md">Thriller</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.2</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg leading-tight mb-1">Fractured Reality</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">1h 55m • R</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TRENDING THIS WEEK -->
+<section class="w-full max-w-container-max mx-auto px-margin-desktop py-stack-lg relative">
+<!-- Decorative background element -->
+<div class="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
+<div class="flex items-center gap-stack-sm mb-stack-md relative z-10">
+<div class="w-1 h-8 bg-primary rounded-full"></div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Trending This Week</h2>
+</div>
+<div class="flex gap-gutter overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide relative z-10">
+<!-- List Item 1 -->
+<div class="min-w-[300px] flex gap-stack-sm bg-surface-container-lowest p-unit rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer snap-start group border border-white/5">
+<div class="w-24 h-32 rounded-lg overflow-hidden flex-shrink-0 relative">
+<img alt="Cafe Amour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Romantic comedy movie poster, sunny Parisian street scene, two people laughing over coffee, warm pastel colors, lighthearted mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2b0Af4IlpqfjrpHKpX-G85MQnRUjtdnf9Hlj-HZus6e66htcw2KmM-lvEvDgmUwazdOVUROOYvlxrkd-F0_cMgeyp-LdneUz0Nmo5K0uLTPe7r_YvDqqQXp8aBg0bvaU92pXCnl1vbvTs2Iah1_4pelzxF-ujB_MxNsNjV6u7nsTZcAkpWrePQFnf9Dng8jeW1rnR5tGz9WaNCFJQKiUwhNfjPva0VNEFkkvWWVg4eSU_JWdUiIM7Tw"/>
+<div class="absolute top-1 left-1 bg-background/80 backdrop-blur-sm w-6 h-6 rounded flex items-center justify-center font-label-caps text-[10px] text-primary border border-white/10">#1</div>
+</div>
+<div class="flex flex-col justify-center py-2 pr-2">
+<h4 class="font-headline-md text-[18px] text-on-surface mb-1 group-hover:text-primary transition-colors">Café Amour</h4>
+<p class="font-body-md text-sm text-on-surface-variant mb-2">Romance, Comedy</p>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.6</span>
+</div>
+<span class="text-xs text-on-surface-variant bg-surface px-2 py-0.5 rounded">2D</span>
+</div>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="min-w-[300px] flex gap-stack-sm bg-surface-container-lowest p-unit rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer snap-start group border border-white/5">
+<div class="w-24 h-32 rounded-lg overflow-hidden flex-shrink-0 relative">
+<img alt="Ice Titans" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Documentary poster, breathtaking aerial shot of a massive glacier carving into the ocean, deep blue ice, stark white snow, dramatic documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo4y0OOjZGLl_ddUclCtNF8Ygcrj6edYtJdwe8RM7EE6kooUAiee12_xdT5glCj7QmT8_MEfI4rHoqJbAaTyjozIz_1gHw2sZ59qjv6nWpk_EY4apYETn757WDcRy_0xoHuuQo5DbsNZ2RkMtEFG237N2uEaoxbydykJSQ6P0zU-91S3STBtT40Dj7vlCrrYekWev7U2ggx90BLZAd7wtrPl3gYdcyyy9bskJUmCJovXfhaBk2ACJYoQ"/>
+<div class="absolute top-1 left-1 bg-background/80 backdrop-blur-sm w-6 h-6 rounded flex items-center justify-center font-label-caps text-[10px] text-on-surface border border-white/10">#2</div>
+</div>
+<div class="flex flex-col justify-center py-2 pr-2">
+<h4 class="font-headline-md text-[18px] text-on-surface mb-1 group-hover:text-primary transition-colors">Echoes of Ice</h4>
+<p class="font-body-md text-sm text-on-surface-variant mb-2">Documentary, Nature</p>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.9</span>
+</div>
+<span class="text-xs text-on-surface-variant bg-surface px-2 py-0.5 rounded">IMAX</span>
+</div>
+</div>
+</div>
+<!-- List Item 3 -->
+<div class="min-w-[300px] flex gap-stack-sm bg-surface-container-lowest p-unit rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer snap-start group border border-white/5">
+<div class="w-24 h-32 rounded-lg overflow-hidden flex-shrink-0 relative">
+<img alt="Midnight Rain" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Classic film noir poster, black and white, silhouette of a detective in a trench coat standing under a street lamp in the rain, heavy shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0ZbSd-lXC7y8SPeOUDACNeDPzxwVSqPF-sxC9ckZuisvYfw1ZwEgSjp-JXTbgLTSfOel8STb0qVcYZltv1-EVdvz2IvD_TU1DdMAtTJZuSnl7e94aQC4x9j_YJV1AnE3eSZX1Eo2V57JpJkpz4oOCcLV6M89PCHXXkMO8G7aGx_ReFDhfoPTNO55NO12kepxVvYVlce9rdvHNo8D0P3-G_fO0adwto447FiBox1ApEmUBXYrc2khgfw"/>
+<div class="absolute top-1 left-1 bg-background/80 backdrop-blur-sm w-6 h-6 rounded flex items-center justify-center font-label-caps text-[10px] text-on-surface border border-white/10">#3</div>
+</div>
+<div class="flex flex-col justify-center py-2 pr-2">
+<h4 class="font-headline-md text-[18px] text-on-surface mb-1 group-hover:text-primary transition-colors">Midnight Rain</h4>
+<p class="font-body-md text-sm text-on-surface-variant mb-2">Mystery, Noir</p>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.7</span>
+</div>
+<span class="text-xs text-on-surface-variant bg-surface px-2 py-0.5 rounded">2D Classic</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple carousel interaction (visual only for demo)
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroBg = document.getElementById('hero-bg');
+    const bgs = [
+      "placeholder", // Initial space image
+      "placeholder", // Imagine a fiery action scene here
+      "placeholder"  // Imagine a mysterious landscape here
+    ];
+    let currentIdx = 0;
+    
+    // Optional: Add logic to cycle through bgs and update content if needed.
+    // Kept minimal to avoid complex state management in raw HTML.
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-white/5 pt-stack-lg pb-stack-md"><div class="max-w-container-max mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg mb-stack-lg"><div><div class="flex items-center gap-unit mb-stack-md"><img alt="CineReserve Logo" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0zMi5O-3zMgusrDeA1hmGEP5F9sW2fWFnIVCfut9XRjNdCeRN6aAkuvii1QfBxhB5KySbbwxQysmx756VFnKlsy4BKzj63QVBMgiIr0ikXI9atFaRv1y0s2KBNIDObwLyrpdanINahlZEUdSA6aWDThggt1m4sB3LnKROj75YRxfWQEo_v8KX6eBsLDhDbWD_NT7bmSIm3MgADckE5QE58zPW8kghkBuEZ64ymsqgTtK6-xG8sNmp3g"/><span class="font-headline-md text-headline-md text-on-surface">CineReserve</span></div><p class="text-on-surface-variant font-body-md text-body-md">The premium cinematic experience at your fingertips. Reserve your front-row seat to the magic.</p></div><div class="flex flex-col gap-unit"><h4 class="font-label-caps text-label-caps text-primary mb-2">Legal</h4><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">Cookie Policy</a></div><div class="flex flex-col gap-unit"><h4 class="font-label-caps text-label-caps text-primary mb-2">Connect</h4><div class="flex gap-stack-sm"><a class="p-2 bg-surface-container rounded-lg text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#"><span class="material-symbols-outlined">share</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#"><span class="material-symbols-outlined">movie</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#"><span class="material-symbols-outlined">public</span></a></div></div><div class="flex flex-col gap-stack-md"><h4 class="font-label-caps text-label-caps text-primary">Newsletter</h4><div class="flex gap-2"><input class="bg-surface-container border border-white/10 rounded-lg px-4 py-2 flex-1 text-on-surface focus:outline-none focus:border-primary font-body-md" placeholder="Enter your email" type="email"/><button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-button text-button hover:scale-105 transition-transform">Join</button></div></div></div><div class="border-t border-white/5 pt-stack-md flex justify-between items-center text-on-surface-variant font-label-caps text-label-caps"><span>© 2024 CineReserve Global. All rights reserved.</span><span>IMAX & 4DX Ready</span></div></div></footer></body></html>
