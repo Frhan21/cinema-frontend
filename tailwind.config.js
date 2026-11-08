@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        cinema: '#0d0e0f',
-        surface: '#17191b',
-        primary: '#ff5f62',
-        secondary: '#65c9ff',
+        cinema: '#070707',
+        surface: '#141414',
+        primary: '#E50914',
+        secondary: '#F5F3EF',
       },
       fontFamily: {
-        display: ['Montserrat', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
+        display: ['"Bricolage Grotesque"', 'sans-serif'],
+        sans: ['Manrope', 'sans-serif'],
       },
     },
   },

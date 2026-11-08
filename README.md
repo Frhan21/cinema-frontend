@@ -42,6 +42,7 @@ VITE_TMDB_READ_TOKEN=your_tmdb_api_read_access_token
 | `/register` | Public | Registration |
 | `/booking/:tmdbId/:scheduleId` | User | Per-schedule seat selection |
 | `/payment` | User | Promo and booking confirmation |
+| `/payment/finish` | Public | Midtrans return handler (parses `order_id` → status page) |
 | `/payment/status/:transactionId` | User | Midtrans/transaction status recovery |
 | `/tickets` | User | Transaction history |
 | `/dashboard` | User | Member dashboard |
@@ -65,6 +66,11 @@ Admin panel includes functional CRUD forms for TMDB movie import/manual movies, 
 ## Payment rules
 
 The frontend sends only `schedule_id`, `seat_id`, and optional `promo_code`. Price, discount, gross amount, user identity, and payment method remain backend-owned. Payment uses the backend-provided Midtrans `redirect_url`. A Midtrans redirect is never treated as proof of payment; `/payment/status/:transactionId` polls the backend transaction state.
+
+Midtrans Dashboard configuration:
+
+- **Finish Redirect URL:** `https://<frontend-host>/payment/finish` — Midtrans appends `?order_id=cinema-<transaction-uuid>&status_code=...&transaction_status=...`; the page validates the prefix/UUID, then replaces the URL with `/payment/status/<uuid>`. Invalid or missing `order_id` shows a safe error without calling the API.
+- **Payment Notification URL:** `https://cinema-ticketing-api.onrender.com/api/v1/payment/notification` — server-to-server webhook that the backend verifies via Midtrans GET Status before mutating transaction state.
 
 ## Specifications
 
