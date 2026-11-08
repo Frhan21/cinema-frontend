@@ -10,6 +10,13 @@ export interface Showtime {
   studioId?: string
 }
 
+export interface PersonCredit {
+  id: string
+  name: string
+  role?: string
+  profileUrl?: string
+}
+
 export interface Movie {
   id: string
   title: string
@@ -22,6 +29,8 @@ export interface Movie {
   ageRating: string
   releaseYear: number
   director: string
+  directorCredit?: PersonCredit
+  cast?: PersonCredit[]
   trailerKey?: string
   tagline?: string
   showtimes: Showtime[]

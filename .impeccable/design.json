@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "name": "CineReserve Midnight Premiere",
+  "tokens": {
+    "color": {
+      "background": "#070707",
+      "surface": "#141414",
+      "primary": "#E50914",
+      "foreground": "#F5F3EF",
+      "mutedForeground": "#B3B3B3"
+    },
+    "font": {
+      "display": "Bricolage Grotesque",
+      "body": "Manrope"
+    },
+    "radius": {
+      "control": "4px"
+    },
+    "motion": {
+      "easeOut": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "micro": "160ms",
+      "page": "480ms"
+    }
+  }
+}

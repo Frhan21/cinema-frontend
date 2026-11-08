@@ -9,6 +9,12 @@ import type { CreateBookingRequest, Schedule } from '../types/api'
 export const useMovies = () =>
   useQuery({ queryKey: ['movies'], queryFn: cinemaService.getMovies })
 
+export const useFeaturedMovies = () =>
+  useQuery({ queryKey: ['movies', 'featured'], queryFn: cinemaService.getFeaturedMovies, staleTime: 10 * 60 * 1000 })
+
+export const useGenreMovieRails = () =>
+  useQuery({ queryKey: ['movies', 'genres', 'rails'], queryFn: cinemaService.getGenreRails, staleTime: 30 * 60 * 1000 })
+
 export const useMovieSearch = (query: string) =>
   useQuery({
     queryKey: ['movies', 'search', query],

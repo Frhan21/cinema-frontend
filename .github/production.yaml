@@ -1,0 +1,56 @@
+name: Production 
+
+on: 
+  push: 
+    branches: 
+      - master
+
+
+jobs: 
+  quality-checks: 
+    name: Test & Lint
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Checkout Code 
+        uses: actions/checkout@v4
+      
+      - name: Setup Node 
+        uses: actions/setup-node@v4
+        with: 
+          node-version: "22"
+          cache: npm
+      
+      - name: Install Dependencies
+        run: npm ci 
+      
+      - name: Run Eslint 
+        run: npm run lint 
+      
+      - name: Run Test 
+        run: npm run test 
+      
+      - name: Run Build 
+        run: npm run build 
+  
+  deploy-production: 
+    name: Deploy Vercel Production
+    runs-on: ubuntu-latest
+    needs: quality-checks
+    if: github.ref == 'refs/heads/master'
+
+    env: 
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    
+    steps: 
+      - name: Checkout Repsitory
+        uses: actions/checkout@v4
+      
+      - name: Setup Node Js 
+        uses: actions/setup-node@v4 
+        with: 
+          node-version: '22'
+        
+      - name: Deploy Production 
+        run: npx vercel@latest deploy --prod --yes --token="${{ secrets.VERCEL_TOKEN }}"

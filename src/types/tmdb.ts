@@ -25,6 +25,12 @@ interface TmdbCredit {
   id: number
   name: string
   job?: string
+  profile_path: string | null
+}
+
+interface TmdbCastCredit extends TmdbCredit {
+  character: string
+  order: number
 }
 
 interface TmdbVideo {
@@ -43,7 +49,7 @@ export interface TmdbMovieDetails extends Omit<TmdbMovieSummary, 'genre_ids'> {
   runtime: number | null
   tagline: string
   genres: TmdbGenre[]
-  credits?: { crew: TmdbCredit[] }
+  credits?: { crew: TmdbCredit[]; cast: TmdbCastCredit[] }
   videos?: { results: TmdbVideo[] }
   release_dates?: { results: Array<{ iso_3166_1: string; release_dates: TmdbReleaseDate[] }> }
 }

@@ -9,6 +9,8 @@ const fallbackPoster = 'https://images.unsplash.com/photo-1485846234645-a62644f8
 const imageUrl = (path: string | null, size: 'w500' | 'w1280') =>
   path ? `${imageBase}/${size}${path}` : size === 'w500' ? fallbackPoster : fallbackBackdrop
 
+const profileUrl = (path: string | null) => path ? `${imageBase}/w500${path}` : undefined
+
 const yearFrom = (date: string) => {
   const year = Number(date.slice(0, 4))
   return Number.isFinite(year) ? year : new Date().getFullYear()
@@ -35,6 +37,14 @@ const certification = (movie: TmdbMovieDetails) => {
   return region?.release_dates.find((item) => item.certification)?.certification || 'NR'
 }
 
+export interface GenreMovieRail {
+  id: number
+  name: string
+  movies: Movie[]
+}
+
+const preferredGenreIds = [28, 18, 35, 27, 16]
+
 export const tmdbService = {
   async getGenres(): Promise<Map<number, string>> {
     const response = await tmdbClient.get<{ genres: TmdbGenre[] }>('/genre/movie/list', { params: { language: 'id-ID' } })
@@ -52,6 +62,27 @@ export const tmdbService = {
       totalPages: moviesResponse.data.total_pages,
       totalResults: moviesResponse.data.total_results,
     }
+  },
+
+  async getGenreRails(limit = 5): Promise<GenreMovieRail[]> {
+    const genres = await this.getGenres()
+    const selected = preferredGenreIds
+      .map((id) => [id, genres.get(id)] as const)
+      .filter((entry): entry is readonly [number, string] => Boolean(entry[1]))
+      .slice(0, limit)
+    const rails = await Promise.allSettled(selected.map(async ([id, name]) => {
+      const response = await tmdbClient.get<TmdbPagedResponse<TmdbMovieSummary>>('/discover/movie', {
+        params: { with_genres: id, language: 'id-ID', region: 'ID', include_adult: false, sort_by: 'popularity.desc', page: 1 },
+      })
+      return { id, name, movies: response.data.results.map((movie) => mapSummary(movie, genres)).slice(0, 14) }
+    }))
+    return rails.flatMap((result) => result.status === 'fulfilled' && result.value.movies.length ? [result.value] : [])
+  },
+
+  async getFeatured(limit = 5): Promise<Movie[]> {
+    const collection = await this.getNowPlaying()
+    const candidates = collection.movies.filter((movie) => movie.backdropUrl).slice(0, limit)
+    return Promise.all(candidates.map((movie) => this.getMovie(movie.id).catch(() => movie)))
   },
 
   async searchMovies(query: string, page = 1): Promise<MovieCollection> {
@@ -74,6 +105,8 @@ export const tmdbService = {
     const movie = response.data
     const trailer = movie.videos?.results.find((video) => video.site === 'YouTube' && video.type === 'Trailer' && video.official)
       ?? movie.videos?.results.find((video) => video.site === 'YouTube' && video.type === 'Trailer')
+    const director = movie.credits?.crew.find((credit) => credit.job === 'Director')
+    const cast = [...(movie.credits?.cast ?? [])].sort((a, b) => a.order - b.order).slice(0, 8)
     return {
       id: String(movie.id),
       title: movie.title,
@@ -85,7 +118,9 @@ export const tmdbService = {
       rating: Number((movie.vote_average / 2).toFixed(1)),
       ageRating: certification(movie),
       releaseYear: yearFrom(movie.release_date),
-      director: movie.credits?.crew.find((credit) => credit.job === 'Director')?.name ?? 'To be announced',
+      director: director?.name ?? 'To be announced',
+      directorCredit: director ? { id: String(director.id), name: director.name, role: 'Director', profileUrl: profileUrl(director.profile_path) } : undefined,
+      cast: cast.map((credit) => ({ id: String(credit.id), name: credit.name, role: credit.character, profileUrl: profileUrl(credit.profile_path) })),
       trailerKey: trailer?.key,
       tagline: movie.tagline,
       showtimes: [],
